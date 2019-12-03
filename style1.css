@@ -1,0 +1,9 @@
+.weatherContainer{
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 5px black;
+    padding: 50px;
+    border-radius: 10px;
+    position: absolute;
+    visibility: hidden;
+    margin-top: 10%;
+}

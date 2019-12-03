@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>CUPB Weather Company</title>
+
+		
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		
+		<link rel="stylesheet" href="style.css">
+		<script src="jquery.js"></script>
+		<script src="weather.js"></script>
+		
+		<style >
+			#weatherContainer{
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 5px black;
+    padding: 10px;
+    padding-top: 0px;
+    top: 0px;
+    border-radius: 10px;
+    position: relative;
+    visibility:hidden;
+    margin-top: 0%;
+}
+
+		</style>
+	</head>
+
+
+	<body>
+		
+		<div class="site-content">
+			<div class="site-header">
+				<div class="container">
+					<a href="index.html" class="branding">
+						<img src="images/logo.png" alt="" class="logo">
+						<div class="logo-type">
+							<h1 class="site-title">CUPB Weather Company</h1>
+							<small class="site-description">The forecast you deserve ( ͡° ͜ʖ ͡°)</small>
+						</div>
+					</a>
+
+					<div class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="news.html">News</a></li>
+							<li class="menu-item"><a href="live-cameras.html">Live cameras</a></li>
+							
+							<li class="menu-item"><a href="contact.html">Contact</a></li>
+						</ul> </div> 
+					<div class="mobile-navigation"></div>
+
+				</div>
+			</div> 
+
+			<div class="hero" data-bg-image="images/banner.png">
+				<div class="container">
+					<form action="#" class="find-location">
+						<input type="text" placeholder="Enter location..." id="loc">
+						<input type="submit" id="find" value="Find">
+					
+
+					</form>
+					<div id="weatherContainer" align="center">
+	<div id="cityHeader"></div>
+				<div id="temperature" ></div>
+				<div id="weatherDescriptionHeader" ></div>
+				<div><img id="documentIconImg" src=""></div>
+			<div id="space" class="bottomDetails"></div>
+			<div id="space1"  class="bottomDetails"></div>
+			<div id="space2"  class="bottomDetails"></div>
+              
+</div>
+
+
+					
+				</div>
+			</div>
+			
+
+
+
+
+
+
+
+
+
+
+			<div class="forecast-table">
+				<div class="container">
+					<div class="forecast-container">
+						<div class="today forecast">
+							<div class="forecast-content">
+								<div class="degree">
+									<div class="num">Weather<br> Types<br><br></div>
+									<div class="forecast-icon">
+										<img src="images/icons/icon-7.svg" alt="" width=90>
+									</div>	
+								</div>
+								<span><img src="images/icon-umberella.png" alt=""></span>
+								<span><img src="images/icon-wind.png" alt=""></span>
+								<span><img src="images/icon-compass.png" alt=""></span>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images/icons/icon-1.svg" alt="" width=48>
+								</div>
+								<div class="degree">Clear</div>
+								<small>25<sup>o</sup>C-29<sup>o</sup>C</small>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images/icons/icon-3.svg" alt="" width=48>
+								</div>
+								<div class="degree">Cloudy</div>
+								<small>23<sup>o</sup>C-26<sup>o</sup>C</small>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images/icons/icon-5.svg" alt="" width=48>
+								</div>
+								<div class="degree">Haze</div>
+								<small>21<sup>o</sup>C-25<sup>o</sup>C</small>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images/icons/icon-12.svg" alt="" width=48>
+								</div>
+								<div class="degree">Thunder<br>storm</div>
+								<small>18<sup>o</sup>C-20<sup>o</sup>C</small>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images/icons/icon-13.svg" alt="" width=48>
+								</div>
+								<div class="degree">Rainy</div>
+								<small>17<sup>o</sup>C-20<sup>o</sup>C</small>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images/icons/icon-14.svg" alt="" width=48>
+								</div>
+								<div class="degree">Heavy<br>Rain</div>
+								<small>15<sup>o</sup>C-18<sup>o</sup>C</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<main class="main-content">
+				<div class="fullwidth-block">
+					<div class="container">
+						<h2 class="section-title">Live cameras</h2>
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="live-camera">
+									<iframe width="265" height="185" src="https://www.youtube-nocookie.com/embed/3Wartp7Ggck" frameborder="0" allow=" autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<h3 class="location">New York</h3>
+									
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="live-camera">
+									<iframe width="265" height="185" src="https://www.youtube-nocookie.com/embed/OWbI6WtlI-k?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<h3 class="location">Los Angeles</h3>
+									
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="live-camera"><iframe width="265" height="185" src="https://www.youtube.com/embed/KGEekP1102g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<h3 class="location">Amsteradam</h3>
+									
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="live-camera">
+									<iframe width="265" height="185" src="https://www.youtube.com/embed/NH-O4gTnsqs?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<h3 class="location">London</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+			<div class="map" id="map1" data-latitude="30.516459" data-longitude="76.659210"></div>
+				
+
+		</div>
+		
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+		
+	</body>
+
+</html>
